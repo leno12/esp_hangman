@@ -1,0 +1,15 @@
+==27993== Memcheck, a memory error detector
+==27993== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27993== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27993== Command: ../ass-b2 ./infiles/cfg02.txt
+==27993== Parent PID: 27972
+==27993== 
+==27993== 
+==27993== HEAP SUMMARY:
+==27993==     in use at exit: 0 bytes in 0 blocks
+==27993==   total heap usage: 3 allocs, 3 frees, 5,672 bytes allocated
+==27993== 
+==27993== All heap blocks were freed -- no leaks are possible
+==27993== 
+==27993== For counts of detected and suppressed errors, rerun with: -v
+==27993== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

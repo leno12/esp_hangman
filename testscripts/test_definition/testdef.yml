@@ -1,0 +1,116 @@
+compinfo:
+  {
+    "codefiles":["ass-b2.c"],
+    "libfile":"../../../ass-b2.so",
+    "binary":"../ass-b2",
+    "assignment_root":"../"
+  }
+testcases:
+  [
+    {"name":"test1",
+              "description":"description example",
+              "result":"P_______ (0)\n
+              Your guess: Pr______ (0)\n
+              Your guess: Pro_____ (0)\n
+              Your guess: Prog____ (0)\n
+              Your guess: Prog____ (1)\n
+              Your guess: Prog____ (2)\n
+              Your guess: Progp_p_ (2)\n
+              Your guess: Progpip_ (2)\n
+              Your guess: Progpipe (2)\n
+              E__ (0)\n
+              Your guess: E__ (1)\n
+              Your guess: E__ (2)\n
+              Your guess: E__ (2)\n
+              Your guess: E__ (3)\n
+              Your guess: E__ (4)\n
+              Your guess: E__ (5)\n
+              Your guess: E__ (6)\n
+              Your guess: E__ (7)\n
+              Your guess: E__ (8)\n
+              Your guess: E__ (9)\n
+              Your guess: ES_ (9)\n
+              Your guess: ES_ (10)\n
+              Your guess: ESP (x_x)\n
+              won (1/2)\n",
+              "return":0,
+              "mode":"io",
+              "infile":"infiles/in01.txt",
+              "args":"./infiles/cfg01.txt"},
+    {"name":"test2",
+              "description":"no arguments",
+              "result":"usage: ../ass-b2 filename\n",
+              "return":1,
+              "mode":"io",
+              "infile":"infiles/in01.txt",
+              "args":""},
+    {"name":"test3",
+              "description":"file does not exist",
+              "result":"ERROR: cannot open file ./infiles/cfg00.txt\n",
+              "return":2,
+              "mode":"io",
+              "infile":"infiles/in01.txt",
+              "args":"./infiles/cfg00.txt"},
+    {"name":"test4",
+              "description":"file invalid",
+              "result":"ERROR: file ./infiles/cfg02.txt invalid\n",
+              "return":3,
+              "mode":"io",
+              "infile":"infiles/in02.txt",
+              "args":"./infiles/cfg02.txt"},
+    {"name":"test5",
+              "description":"spaces in file",
+              "result":"P_______ (0)\n
+              Your guess: Pr______ (0)\n
+              Your guess: Pro_____ (0)\n
+              Your guess: Prog____ (0)\n
+              Your guess: Prog____ (1)\n
+              Your guess: Prog____ (2)\n
+              Your guess: Progp_p_ (2)\n
+              Your guess: Progpip_ (2)\n
+              Your guess: Progpipe (2)\n
+              E__ (0)\n
+              Your guess: E__ (1)\n
+              Your guess: E__ (2)\n
+              Your guess: E__ (2)\n
+              Your guess: E__ (3)\n
+              Your guess: E__ (4)\n
+              Your guess: E__ (5)\n
+              Your guess: E__ (6)\n
+              Your guess: E__ (7)\n
+              Your guess: E__ (8)\n
+              Your guess: E__ (9)\n
+              Your guess: ES_ (9)\n
+              Your guess: ES_ (10)\n
+              Your guess: ESP (x_x)\n
+              p____________ (0)\n
+              Your guess: p____________ (1)\n
+              Your guess: p_____mm_____ (1)\n
+              Your guess: p_____mm_____ (1)\n
+              Your guess: p_____mm_____ (2)\n
+              Your guess: pr__r_mm__r__ (2)\n
+              Your guess: pr__r_mm_ere_ (2)\n
+              Your guess: pr__r_mm_ere_ (3)\n
+              Your guess: pr__r_mm_eren (3)\n
+              Your guess: pro_r_mm_eren (3)\n
+              Your guess: progr_mm_eren (3)\n
+              Your guess: progr_mmieren (3)\n
+              Your guess: programmieren (3)\n
+              t_____ (0)\n
+              Your guess: t_____ (1)\n
+              Your guess: t_____ (2)\n
+              Your guess: t_____ (3)\n
+              Your guess: t_____ (4)\n
+              Your guess: t_____ (5)\n
+              Your guess: t_____ (6)\n
+              Your guess: t_____ (7)\n
+              Your guess: t_____ (8)\n
+              Your guess: t_____ (9)\n
+              Your guess: t_____ (10)\n
+              Your guess: testen (x_x)\n
+              won (2/4)\n",
+              "return":0,
+              "mode":"io",
+              "infile":"infiles/in03.txt",
+              "args":"./infiles/cfg03.txt"},
+  ]
